@@ -24,6 +24,7 @@ function addAnswer(ac, qIdx) { //버튼 만들고 내용 넣기
       for (let i = 0; i < buttons.length; i++) {
         buttons[i].style.display = 'none';
       }
+      sb.style.animation = 'progress 1s'; //왜 한번만 실행 되는걸까
       goNext(++qIdx);
     }, 450);
   }, false)
@@ -31,9 +32,9 @@ function addAnswer(ac, qIdx) { //버튼 만들고 내용 넣기
 
 function goNext(qIdx) { // 다음 질문으로 넘어가며 addAnswer 호출
   q.innerHTML = qnaList[qIdx].q;
-  sb.style.width = ((100/endPoint) * (qIdx+1)-3) + '%';
   for (let i in qnaList[qIdx].a) { //for ... in 문
     addAnswer(qnaList[qIdx].a[i].answer, qIdx);
+    sb.style.width = ((100/endPoint) * (qIdx+1)) + '%';
   }
 }
 

@@ -18,23 +18,24 @@
   to {opacity : 0;}
 }
 
-@keyframes load {
-  0% {width: 0;
-    background: #a28089;}
-  25% {width: 40%;
-    background: #a0d2eb;}
-  50% {width: 60%;
-    background: #ffa8b6;}
-  75% {width: 75%;
-    background: #d0bdf4;}
-  100% {width: 100%;
-    background: #494d5f;}
+@keyframes pulse {
+  0% {background: #a0d2eb;}
+  25% {background: #ffa8b6;}
+  50% {background: #d0bdf4;}
+  75% {background: #fff4b7;}
 }
 
-@keyframes pulse {
-  0% {background: #a28089;}
-  25% {background: #a0d2eb;}
-  50% {background: #ffa8b6;}
-  75% {background: #d0bdf4;}
-  100% {background: #494d5f;}
+@keyframes progress {
+  0% {width: 0%;}
+  100% {width: 100%;}
 }
+
+/* @keyframes ch0 {
+  0% {background: #e6b6c3;}
+  100% {background: #a0d2eb;}
+}
+
+@keyframes ch1 {
+  0% {background:#a0d2eb; }
+  100% {background: #ffa8b6;}
+} */
