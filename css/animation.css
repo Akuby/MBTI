@@ -1,0 +1,40 @@
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity : 1;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity : 0;}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity : 1;}
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity : 0;}
+}
+
+@keyframes load {
+  0% {width: 0;
+    background: #a28089;}
+  25% {width: 40%;
+    background: #a0d2eb;}
+  50% {width: 60%;
+    background: #ffa8b6;}
+  75% {width: 75%;
+    background: #d0bdf4;}
+  100% {width: 100%;
+    background: #494d5f;}
+}
+
+@keyframes pulse {
+  0% {background: #a28089;}
+  25% {background: #a0d2eb;}
+  50% {background: #ffa8b6;}
+  75% {background: #d0bdf4;}
+  100% {background: #494d5f;}
+}
