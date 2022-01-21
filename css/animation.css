@@ -19,23 +19,15 @@
 }
 
 @keyframes pulse {
-  0% {background: #a0d2eb;}
-  25% {background: #ffa8b6;}
-  50% {background: #d0bdf4;}
-  75% {background: #fff4b7;}
+  0% {background: #fcb1b1;}
+  33% {background: #e7e486;}
+  66% {background: #9bcdff;}
+  100% {background: #fcb1b1;}
 }
 
-@keyframes progress {
-  0% {width: 0%;}
-  100% {width: 100%;}
+@-webkit-keyframes pulse {
+  0% {background: #fcb1b1;}
+  33% {background: #e7e486;}
+  66% {background: #9bcdff;}
+  100% {background: #fcb1b1;}
 }
-
-/* @keyframes ch0 {
-  0% {background: #e6b6c3;}
-  100% {background: #a0d2eb;}
-}
-
-@keyframes ch1 {
-  0% {background:#a0d2eb; }
-  100% {background: #ffa8b6;}
-} */

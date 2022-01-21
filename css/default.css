@@ -1,5 +1,6 @@
 body{
-  background: #becfff;}
+  animation: pulse 20s infinite;
+}
 *{
   font-family: 'Noto Serif KR', serif;
 }

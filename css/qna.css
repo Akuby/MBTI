@@ -40,6 +40,5 @@
   padding: 3px;
   border: 2px solid whitesmoke;
   border-radius: 20px;
-  background: #a0d2eb;  /* fallback for old browsers */
-  animation: pulse 5s infinite;
+  background: #d0d0d0;
 }

@@ -1,0 +1,15 @@
+#result {
+    display: none;
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;  
+}
+
+.color{
+    width: 100%;
+}
+
+.resultDesc{
+    line-height: 30px;
+}
