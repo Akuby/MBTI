@@ -16,7 +16,7 @@ function setResult() {
   resultDB.innerHTML = infoList[b].desc;
   const imgURL = './img/image-' + b + '.png';
   resultIG.src = imgURL;
-  resultIG.alt - b;
+  resultIG.alt = b;
 }
 
 function goResult(){ //결과 화면으로 이동
