@@ -10,6 +10,11 @@
     width: 100%;
 }
 
+.resultName{
+    line-height: 50px;
+}
+
 .resultDesc{
     line-height: 30px;
+    text-align: justify;
 }
