@@ -48,11 +48,9 @@ function addAnswer(ac, qIdx, idx) { //버튼 만들고 내용 넣기
     }
     setTimeout(() => {
       var target = qnaList[qIdx].a[idx].type;
-      console.log(target);
       for(let i = 0; i < target.length; i++){
         select[target[i]] += 1;
       }
-      console.log(select);
       for (let i = 0; i < buttons.length; i++) {
         buttons[i].style.display = 'none';
       }

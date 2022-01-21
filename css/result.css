@@ -6,6 +6,13 @@
     border-radius: 20px;  
 }
 
+#shareResult{
+    background-color: #f5f5f5;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;  
+}
+
 .color{
     width: 100%;
 }
@@ -17,4 +24,25 @@
 .resultDesc{
     line-height: 30px;
     text-align: justify;
+}
+
+button {
+    border: none;
+    padding: 0;
+}
+
+.kakao{
+    display:block; 
+    width:350px;
+    height:91px;
+    background:url(../img/kakao.png) no-repeat;
+}
+
+a:hover.kakao{
+    background:url(../img/kakao2.png) no-repeat;
+    cursor: pointer;
+  }
+
+.kakao span{
+    display:none;
 }
