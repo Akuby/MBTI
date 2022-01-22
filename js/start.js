@@ -7,6 +7,8 @@ const sb = document.querySelector('.statusBar');
 const resultNB = document.querySelector('.resultName');
 const resultIG = document.querySelector('.color');
 const resultDB = document.querySelector('.resultDesc');
+const resultGP = document.querySelector('.goodPair');
+const resultBP = document.querySelector('.badPair');
 const endPoint = 12;
 const select = [0,0,0,0,0,0,0,0,0,0,0,0];
 
@@ -14,6 +16,7 @@ function setResult() {
   let b = select.indexOf(Math.max(...select));
   resultNB.innerHTML = infoList[b].name;
   resultDB.innerHTML = infoList[b].desc;
+  console.log(infoList[b].pair);
   const imgURL = './img/image-' + b + '.png';
   resultIG.src = imgURL;
   resultIG.alt = b;

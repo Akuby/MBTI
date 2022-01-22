@@ -1,14 +1,13 @@
 #result {
     display: none;
     background-color: whitesmoke;
-    width: 80%;
+    width: 95%;
     text-align: center;
     border-radius: 20px;  
 }
 
 #shareResult{
     background-color: #f5f5f5;
-    width: 80%;
     text-align: center;
     border-radius: 20px;  
 }
@@ -18,7 +17,8 @@
 }
 
 .resultName{
-    line-height: 50px;
+    line-height: 30px;
+    font-size: 20px;
 }
 
 .resultDesc{
@@ -26,23 +26,22 @@
     text-align: justify;
 }
 
+.resultPair{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#goodPair{
+    height: 150px;
+}
+
+#badPair{
+    height: 150px;
+}
+
 button {
     border: none;
     padding: 0;
 }
 
-.kakao{
-    display:block; 
-    width:350px;
-    height:91px;
-    background:url(../img/kakao.png) no-repeat;
-}
-
-a:hover.kakao{
-    background:url(../img/kakao2.png) no-repeat;
-    cursor: pointer;
-  }
-
-.kakao span{
-    display:none;
-}
