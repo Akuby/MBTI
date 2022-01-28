@@ -7,8 +7,10 @@ const sb = document.querySelector('.statusBar');
 const resultNB = document.querySelector('.resultName');
 const resultIG = document.querySelector('.color');
 const resultDB = document.querySelector('.resultDesc');
-const resultGP = document.querySelector('.goodPair');
-const resultBP = document.querySelector('.badPair');
+const GI = document.querySelector('.gpImg');
+const GN = document.querySelector('.gpName');
+const BI = document.querySelector('.bpImg');
+const BN = document.querySelector('.bpName');
 const endPoint = 12;
 const select = [0,0,0,0,0,0,0,0,0,0,0,0];
 
@@ -16,10 +18,21 @@ function setResult() {
   let b = select.indexOf(Math.max(...select));
   resultNB.innerHTML = infoList[b].name;
   resultDB.innerHTML = infoList[b].desc;
-  console.log(infoList[b].pair);
-  const imgURL = './img/image-' + b + '.png';
+  let imgURL = './img/image-' + b + '.png'; //사용자의 컬러
   resultIG.src = imgURL;
   resultIG.alt = b;
+
+  const gPN = infoList[b].pair[0] //Goodpair 컬러
+  let goodUrl = './img/image-' + gPN + '.png'; 
+
+  GI.src = goodUrl;
+  GN.innerHTML = infoList[Number(gPN)].name;
+
+  const bPN = infoList[b].pair[1]//Badpair 컬러
+  let badUrl = './img/image-' + infoList[b].pair[1] + '.png'; 
+
+  BI.src = badUrl;
+  BN.innerHTML = infoList[Number(bPN)].name;
 }
 
 function goResult(){ //결과 화면으로 이동
