@@ -5,6 +5,7 @@ const qnaList = [
       { answer: '이성 사이에 친구가 어딨어? 절대 없어', type: [1, 2, 4, 9] },
       { answer: '결코 이성으로 보이지 않는 친구 관계는 존재해', type: [0, 3, 6, 5, 10, 8] },
       { answer: '난 잘 모르겠어..', type: [7, 11] },
+      { answer: 'testing...', type:[3, 5, 8]}
     ]
   },
   {
